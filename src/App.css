@@ -1,0 +1,101 @@
+/* Hamburger css */
+.menu {
+	display: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu.open {
+	display: block;
+}
+
+.menu-icon {
+	display: block;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.menu-icon {
+		display: block;
+	}
+	.menu {
+		display: none;
+		background-color: #333;
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 100%;
+	}
+	.menu li {
+		padding: 10px;
+		color: #fff;
+	}
+}
+
+/* Dark-light Theme */
+.dark {
+	background-color: #333;
+	color: #fff;
+}
+.light {
+	background-color: aliceblue;
+	color: #333333;
+}
+
+/* Navbar container styles */
+.navbar-fixed {
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+/* Navbar section styles */
+.navbar-section {
+	position: relative;
+}
+
+/* Navbar section label styles */
+.navbar-section-label {
+	cursor: pointer;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+}
+
+/* Navbar dropdown styles */
+.navbar-dropdown {
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	z-index: 1000;
+	width: 200px; /* Adjust dropdown width as needed */
+}
+
+/* Navbar dropdown item styles */
+.navbar-dropdown-item {
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 8px 0;
+	transition: background-color 0.3s ease;
+}
+
+.navbar-dropdown-item:hover {
+	background-color: #f0f0f0;
+}
+
+/* Content below navbar styles */
+.content {
+	padding: 20px;
+	margin-top: 80px; /* Adjust based on navbar height */
+}
